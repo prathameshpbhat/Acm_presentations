@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "108744830845",
+    "firebase_url": "https://saavyas-468f0.firebaseio.com",
+    "project_id": "saavyas-468f0",
+    "storage_bucket": "saavyas-468f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108744830845:android:3d1d7fb95740d2269ba614",
+        "android_client_info": {
+          "package_name": "com.example.kisan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108744830845-ng06touj4iepec7mvftc2s81g9d5t2bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqD8s-iRiosBzbOiua_ljT-iKAv2fHvBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108744830845-ng06touj4iepec7mvftc2s81g9d5t2bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
