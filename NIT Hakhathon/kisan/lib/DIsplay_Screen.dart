@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_database/firebase_database.dart';
 class Homepage extends StatefulWidget
 {
  
@@ -84,12 +85,12 @@ setState(() {
              child:Column(
                crossAxisAlignment: CrossAxisAlignment.start,
                children: <Widget>[
-           Text("Find Your",
+           Text("Meet your",
            
               style:TextStyle(color: Colors.black87,fontSize: 25.0
                   )
                 ),
-                Text("Inspration",
+                Text("Requirement",
                 style: TextStyle(
                   color: Colors.black,fontSize: 40.0
                 ),
@@ -183,7 +184,40 @@ setState(() {
                          ),
                     ),
                         )
-                      )
+                      ), Container(
+                    margin: EdgeInsets.all(30.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(40.0),
+        gradient: LinearGradient(
+       
+        
+          colors: <Color>[
+              Colors.lightGreen,
+              Colors.green,
+           
+
+          ]
+
+        )
+      ),
+                  child:Builder(
+                  builder: (context) => Center( 
+                    child:MaterialButton(
+                  
+                    child: Text("Submit",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0
+                    ),
+                    ), onPressed: () {
+                      movetonextstate();
+                    },
+                    
+                  ),
+                  ),
+                  ),
+                  ),
                       ],
                     ),
                      
@@ -195,6 +229,7 @@ setState(() {
 
     ),
     );
+    
   }
 Widget getpromocard(String image)
 {
@@ -233,5 +268,19 @@ Widget getpromocard(String image)
   databaseReference.child('Consumer').update({
     'Amount': Amount.text,
   });
+
 }
+  void movetonextstate() async
+  {
+    databaseReference.child("Consumer").set({
+    'Name': 'Kenan',
+    'pass':'1234',
+    'Amount':Amount.text,
+    'Phone': '7020206186',
+'Location': 'Panaji',
+    
+  });
+
+ 
+  }
 }
