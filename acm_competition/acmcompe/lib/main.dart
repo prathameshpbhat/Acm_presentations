@@ -24,6 +24,7 @@ class _HomePage extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
           //type: BottomNavigationBarType.shifting,
           currentIndex:ci ,
+          backgroundColor: Colors.white,
           items: <BottomNavigationBarItem>[
             
             
@@ -82,7 +83,7 @@ onTap: (index)
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Container(
-                        height: 220,
+                        height: 170,
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: <Widget>[
@@ -104,10 +105,10 @@ onTap: (index)
 
   Widget MakeItem(image,rating) {
     return AspectRatio(
-      aspectRatio: 1.7 / 2,
+      aspectRatio: 1.7 / 1.8,
       child: Container(
-        margin: EdgeInsets.only(right: 12),
-        padding: EdgeInsets.all(20),
+         margin: EdgeInsets.only(right: 12),
+        padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.white,
@@ -119,8 +120,8 @@ onTap: (index)
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Container(
-                      width: 60,
-                      height: 60,
+                      width: 40,
+                      height: 40,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
@@ -149,7 +150,7 @@ onTap: (index)
               'Prajyoti Naik',
               style: TextStyle(
                 color: Colors.grey[800],
-                fontSize: 25,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
